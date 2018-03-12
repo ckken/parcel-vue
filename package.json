@@ -1,0 +1,29 @@
+{
+  "name": "parcel-vue",
+  "version": "1.0.0",
+  "description": "parcel vue",
+  "main": "index.js",
+  "repository": "https://github.com/ckken/parcel-vue.git",
+  "author": "ken",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html --public-url ./",
+    "start": "cross-env NODE_ENV=development parcel ./src/index.html -p 8888",
+    "web": "serve ./dist -p 8888"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.1.4",
+    "parcel-bundler": "parcel-bundler/parcel#vue",
+    "serve": "^6.5.3",
+    "vue-router": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "dependencies": {
+    "vue": "^2.5.15",
+    "vuex": "^3.0.1"
+  }
+}
