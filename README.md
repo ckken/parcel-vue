@@ -7,6 +7,6 @@
 
 ## 项目启动
 `yarn`  
-`yarn start`    dev项目
-`yarn build`    打包 production 项目
-`yarn web`      web环境下进行
+`yarn start`    dev项目 
+`yarn build`    打包 production 项目    
+`yarn web`      web环境下进行   
