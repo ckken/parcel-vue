@@ -1,29 +1,37 @@
 {
   "name": "parcel-vue",
   "version": "1.0.0",
-  "description": "parcel vue",
   "main": "index.js",
-  "repository": "https://github.com/ckken/parcel-vue.git",
   "author": "ken",
   "license": "MIT",
-  "scripts": {
-    "build": "cross-env NODE_ENV=production parcel build ./src/index.html --public-url ./",
-    "start": "cross-env NODE_ENV=development parcel ./src/index.html -p 8888",
-    "web": "serve ./dist -p 8888"
+  "dependencies": {
+    "eslint-plugin-promise": "^3.7.0",
+    "vue": "^2.5.16",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
     "babel-plugin-module-resolver": "^3.1.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.1.4",
-    "parcel-bundler": "parcel-bundler/parcel#vue",
-    "serve": "^6.5.3",
-    "vue-router": "^3.0.1",
-    "vuex-router-sync": "^5.0.0"
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.3.0",
+    "less": "^3.0.1",
+    "parcel-bundler": "^1.6.2",
+    "parcel-plugin-eslint": "^1.0.0",
+    "parcel-plugin-vue": "^1.5.0",
+    "serve": "^6.5.3"
   },
-  "dependencies": {
-    "vue": "^2.5.15",
-    "vuex": "^3.0.1"
+  "scripts": {
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html --public-url ./",
+    "start": "cross-env NODE_ENV=development parcel ./src/index.html -p 8888",
+    "web": "serve ./dist -p 8888"
   }
 }

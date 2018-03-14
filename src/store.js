@@ -14,10 +14,10 @@ const store = new Vuex.Store({
     count: 0
   },
   mutations: {
-    increment: async(state) => {
-      await timeout(2000)
-
+    increment: async (state) => {
+      await timeout(10)
       state.count += 1
+      console.log('delay 10ms')
     },
     decrement: (state) => {
       state.count -= 1

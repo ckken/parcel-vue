@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import App from '@/app/App.vue'
+import App from '@/App.vue'
 
-new Vue({el: '#app',render: h => h(App)})
+const vueApp = new Vue({el: '#app', render: h => h(App)})

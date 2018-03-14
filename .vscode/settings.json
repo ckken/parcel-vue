@@ -1,3 +1,18 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.autofetch": true,
+    "eslint.run": "onSave",
+    "eslint.packageManager":"yarn",
+    "eslint.autoFixOnSave": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.js"
+    },
+    "eslint.validate": [
+        "javascript",{
+            "language": "vue",
+            "autoFix": true
+        },
+        "html"
+    ],
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
 }

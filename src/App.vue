@@ -1,19 +1,16 @@
 <template>
-<div id="app">
-  <div class="counter-warp">
-    <img src="../assets/logo.png">
-    <p>Vuex counter：{{ count }}</p>
+  <div id="app">
+    <p>计数器：{{ count }}</p>
     <p>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
     </p>
   </div>
-  </div>
 </template>
 
 <script>
 // Use Vuex
-import store from '@/app/store'
+import store from './store'
 
 export default {
   computed: {
@@ -33,9 +30,9 @@ export default {
 
 </script>
 <style>
-.counter-warp {
+#app {
   text-align: center;
-  margin-top: 100px;
+  font-size: 20px;
 }
 .home {
   display: inline-block;

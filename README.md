@@ -1,1 +1,1 @@
-# parcel-vue
+# parcel-vue 工程化 vue vuex 轻量级H5解决方案
